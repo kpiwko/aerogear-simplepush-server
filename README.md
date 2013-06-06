@@ -23,3 +23,9 @@ A WildFly/AS7 module for the SimplePush Server.
 
 Please refer to the above modules documentation for more information.
 
+## Troubleshooting
+
+If the tests are failing with ``OutOfMemoryException`` on your machine, you need to increase number of processes per user limit.
+This can be done via:
+
+    ulimit -u 8196
